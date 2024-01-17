@@ -27,7 +27,6 @@ for nome_arquivo in lista_arquivos:
             nova_pasta = regras_arquivos[chave]
             nome_completo_original = os.path.join(pasta_origem, nome_arquivo)
             nome_completo_final = os.path.join(pasta_destino, nova_pasta, nome_arquivo)
-            # verificar se existe a pasta nova_pasta no destino (pasta_destino)
             caminho_nova_pasta = os.path.join(pasta_destino, nova_pasta)
             if not os.path.exists(caminho_nova_pasta):
                 os.mkdir(caminho_nova_pasta)
